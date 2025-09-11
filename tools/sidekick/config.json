@@ -5,7 +5,7 @@
 		"id" : "epam",
 		"title" : "EPAM",
 		"environments" : ["edit", "dev", "preview", "live", "prod"],
-		"url" : "https://www.epam.com",
+		"url" : "https://www.epam.com?search=true",
 		"passConfig" : true,
 		"passReferrer" : true,
 		"excludePaths" : [
