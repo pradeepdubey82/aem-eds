@@ -15,12 +15,6 @@
 			"**.docx",
 			"**/fr/sales/**"
 		]
-	},
-	{
-		"id" : "tools",
-		"title" : "Tools",
-		"isContainer" : true
-		
 	}
 ]
 }
