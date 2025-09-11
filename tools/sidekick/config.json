@@ -2,7 +2,7 @@
 "project" : "EDS Demo",
 "plugins" :[
 	{
-		"id" : "spam",
+		"id" : "epam",
 		"title" : "EPAM",
 		"environments" : ["edit", "dev", "preview", "live", "prod"],
 		"url" : "https://www.epam.com",
