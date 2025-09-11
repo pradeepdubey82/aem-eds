@@ -4,7 +4,7 @@
 	{
 		"id" : "epam",
 		"title" : "EPAM",
-		"environments" : ["edit", "dev", "preview", "live", "prod"],
+		"environments" : ["edit", "dev", "Preview", "Live", "prod"],
 		"url" : "https://www.epam.com",
 		"passConfig" : true,
 		"passReferrer" : true,
