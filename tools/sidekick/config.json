@@ -6,15 +6,7 @@
 		"title" : "EPAM",
 		"environments" : ["edit", "dev", "preview", "live", "prod"],
 		"url" : "https://www.epam.com?search=true",
-		"passConfig" : true,
-		"passReferrer" : true,
-		"excludePaths" : [
-			"**/fr/**"
-		],
-		"includePaths" : [
-			"**.docx",
-			"**/fr/sales/**"
-		]
+		"includePaths" : ["**.docx**"]
 	}
 ]
 }
