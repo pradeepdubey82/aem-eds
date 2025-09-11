@@ -34,14 +34,14 @@ indices:
         select: none
         value: |
           parseTimestamp(headers['last-modified'], 'ddd, DD MMM YYYY hh:mm:ss GMT')
-      jobTitle:
-        select: head > meta[name="job-title"]
+      pagetitle:
+        selectFirst: h1
         value: |
-          attribute(el, 'content')
-      department:
-        select: head > meta[name="department"]
+          textContent(el)
+      blocks:
+        select: none
         value: |
-          attribute(el, 'content')
+          headers['blocks']
       positionType:
         select: head > meta[name="position-type"]
         value: |
