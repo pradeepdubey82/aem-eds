@@ -1,3 +1,5 @@
+{
+"project" : "EDS Demo"
 "plugins" :[
 	{
 		"id" : "spam",
@@ -21,3 +23,4 @@
 		
 	}
 ]
+}
