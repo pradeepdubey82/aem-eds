@@ -1,17 +1,23 @@
 "plugins" :[
-{
-	"id" : "spam",
-	"title" : "EPAM",
-	"environments" : ["edit", "dev", "preview", "live", "prod"],
-	"url" : "https://www.epam.com",
-	"passConfig" : "true",
-	"passReferrer" : "true",
-	"excludePaths" : [
-		"**/fr/**"
-	],
-	"includePaths" : [
-		"**.docx",
-		"**/fr/sales/**"
-	]
-}
+	{
+		"id" : "spam",
+		"title" : "EPAM",
+		"environments" : ["edit", "dev", "preview", "live", "prod"],
+		"url" : "https://www.epam.com",
+		"passConfig" : true,
+		"passReferrer" : true,
+		"excludePaths" : [
+			"**/fr/**"
+		],
+		"includePaths" : [
+			"**.docx",
+			"**/fr/sales/**"
+		]
+	},
+	{
+		"id" : "tools",
+		"title" : "Tools",
+		"isContainer" : true
+		
+	}
 ]
