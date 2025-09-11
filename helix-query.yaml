@@ -1,9 +1,10 @@
 version: 1
-
 indices:
   site:
     include:
-      - '/**'
+      - '**'
+    exclude		
+      - '/en/**' 	
     target: /query-index
     properties:
       title:
