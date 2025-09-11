@@ -7,27 +7,27 @@ indices:
       - '/en/**'
    target: /query-index
    properties:
-   title:
+    title:
         select: head > meta[property="og:title"]
         value: |
           attribute(el, 'content')
-   image: 
+    image: 
         select: head > meta[property="og:image"]
         value: |
           match(attribute(el, 'content'), 'https:\/\/[^/]+(\/.*)')
-   description:
+    description:
         select: head > meta[name="description"]
         value: |
           attribute(el, 'content')
-   pagetitle:
+    pagetitle:
         selectFirst: h1
         value: |
           textContent(el)
-   blocks:
+    blocks:
         select: none
         value: |
           headers['blocks']
-   lastModified:
+    lastModified:
         select: none
         value: |
           parseTimestamp(headers['last-modified'], 'ddd, DD MMM YYYY hh:mm:ss GMT')
