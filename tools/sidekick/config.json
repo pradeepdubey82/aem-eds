@@ -1,5 +1,5 @@
 {
-"project" : "EDS Demo"
+"project" : "EDS Demo",
 "plugins" :[
 	{
 		"id" : "spam",
