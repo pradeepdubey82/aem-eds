@@ -27,5 +27,7 @@
         	"includePaths": [ "**.docx**" ]
       	}
 
-]
+],
+"previewHost": "main--aem-eds--pradeepdubey82.aem.page/",
+"liveHost": "main--aem-eds--pradeepdubey82.aem.live/"
 }
