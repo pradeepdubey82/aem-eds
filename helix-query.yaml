@@ -9,6 +9,6 @@ indices:
    properties:
      title:
        select: 
-         head > meta[property="og:title"]
+        head > meta[property="og:title"]
        value: |
         attribute(el, 'content')
