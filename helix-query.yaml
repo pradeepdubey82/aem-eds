@@ -1,33 +1,11 @@
 version: 1
 indices:
-  site: null
-  include:
+  eds-test:
+   include:
     - "**"
-  exclude:
+   exclude:
     - /en/**
-  target: /query-index
-  properties:
-    title:
-      select: head > meta[property="og:title"]
-      value: |
-        attribute(el, 'content')
-      image:
-        select: head > meta[property="og:image"]
-        value: |
-          match(attribute(el, 'content'), 'https:\/\/[^/]+(\/.*)')
-      description:
-        select: head > meta[name="description"]
-        value: |
-          attribute(el, 'content')
-      pagetitle:
-        selectFirst: h1
-        value: |
-          textContent(el)
-      blocks:
-        select: none
-        value: |
-          headers['blocks']
-      lastModified:
-        select: none
-        value: >
-          parseTimestamp(headers['last-modified'], 'ddd, DD MMM YYYY hh:mm:ss GMT')
+   target: /query-index
+   properties:
+    title: select: head > meta[property="og:title"]
+    value: attribute(el, 'content')
