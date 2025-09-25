@@ -130,6 +130,7 @@ async function loadPage() {
 }
 
 function loadErrorPage(main) {
+  alert("error page");
   if (window.errorCode === '404') {
     const fragmentPath = '/fragments/404';
     const fragmentLink = document.createElement('a');
